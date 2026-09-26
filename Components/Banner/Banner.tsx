@@ -11,8 +11,19 @@ const Banner = () => {
                 Our goal is to turn your ideas into digital experiences that truly make an impact.
             </p>
             <div className='flex flex-row justify-between items-center gap-8'>
-                <button className='banner-button'><Image src={'/assets/play-store.png'} alt='play-store' width={24} height={24} />Google Play</button>
-                <button className='banner-button'><Image src={'/assets/app-store.png'} alt='app-store' width={24} height={24} />App Store</button>
+                <a href='https://play.google.com/store/apps/'
+                target='blank'
+                className='banner-button'>
+                <Image src={'/assets/play-store.png'} alt='play-store' width={24} height={24} />
+                Google Play
+                </a>
+                <a
+                href='https://apps.apple.com/'
+                target='blank'
+                className='banner-button'>
+                <Image src={'/assets/app-store.png'} alt='app-store' width={24} height={24} />
+                App Store
+                </a>
             </div>
             <Image src={'/assets/hero.png'} alt='hero' width={800} height={800} />
         </div>

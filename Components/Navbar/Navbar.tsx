@@ -12,9 +12,9 @@ const Navbar = () => {
                 <h1 className='text-base font-bold'>Hero.IO</h1>
             </Link>
             <ul className='flex flex-row justify-between items-center gap-3'>
-                <li className='active'>Home</li>
-                <li className='inactive'>Apps</li>
-                <li className='inactive'>Installation</li>
+                <Link href={'/'} className='active'>Home</Link>
+                <Link href={'/apps'} className='inactive'>Apps</Link>
+                <Link href={'/installed'} className='inactive'>Installation</Link>
             </ul>
             <a href='https://github.com/Mahfuz1907' target='blank' className='contribute-button'><FaGithub />Contribute</a>
         </div>
