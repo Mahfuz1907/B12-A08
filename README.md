@@ -2,12 +2,6 @@
 
 ---
 
-# 🐣 Basic Requirements
-
-- Make the Application Responsive for All the Devices
-
----
-
 # 🔧 Main Requirements
 
 ## 1. 🧱 Layout & Data Design
@@ -170,12 +164,5 @@
 - Show a loading animation during:
   - Page navigation.
   - Search operation
-
----
-
-## 🚀 Deployment
-
-- Deploy the project to Cloudflare / Netlify / Vercel.
-- Reloading from any route must work correctly without showing a 404 error.
 
 ---
