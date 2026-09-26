@@ -14,7 +14,7 @@ const AppsAndSearch = async() => {
     return (
         <div className='w-full flex flex-col justify-between items-center gap-10'>
             <div className='flex flex-row justify-between items-center w-full'>
-                <h2 className='text-2xl font-semibold'>(132) Apps Found</h2>
+                <h2 className='text-2xl font-semibold'>({appData.length}) Apps Found</h2>
                 <Search />
             </div>
             <AllApps appData={appData} />
