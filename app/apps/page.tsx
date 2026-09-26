@@ -1,5 +1,14 @@
 import React from 'react';
 import AppsAndSearch from './AppsAndSearch';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Apps | Hero.IO",
+  icons:{
+    icon: '/assets/logo.png'
+  }
+};
 
 const AllApps = () => {
     return (

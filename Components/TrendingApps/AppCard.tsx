@@ -15,7 +15,6 @@ const formatDownloads = (count: number) => {
 };
 
 const AppCard = ({app}: AppCardType) => {
-    console.log(app)
     return (
         <Link
         href={`/apps/${app.id}`}
