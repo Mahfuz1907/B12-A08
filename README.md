@@ -1,7 +1,3 @@
-# 🦸‍♂️ Assignment 008 — Hero IO
-
----
-
 # 🔧 Main Requirements
 
 ## 1. 🧱 Layout & Data Design
@@ -9,13 +5,7 @@
 #### Header
 
 - The header must include:
-  - A logo.on clicking it user will be navigated to home page.
   - A navigation bar with links [ `home` , `apps` , `installation` ] and active route indication.
-  - A `Contribution` button as Figma linking to the your GitHub profile.
-
-#### Footer
-
-- Design a custom footer using your own creativity and style.
 
 #### Data
 
