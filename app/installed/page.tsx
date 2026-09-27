@@ -1,5 +1,14 @@
 import React from 'react';
 import AppLists from './AppLists';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Your Install | Hero.IO",
+  icons:{
+    icon: '/assets/logo.png'
+  }
+};
 
 const InstalledApps = () => {
     return (

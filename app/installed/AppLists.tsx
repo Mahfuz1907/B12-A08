@@ -7,15 +7,36 @@ import Link from 'next/link';
 import { AppWindow } from 'lucide-react';
 
 const AppLists = () => {
-    const {installed} = useContext(AppContext)
+    const {installed, sortBy, setSortBy} = useContext(AppContext)
+
+    const sortedInstalled = [...installed].sort((a, b) => {
+        if(sortBy === 'size'){
+            return b.size - a.size
+        }
+
+        if(sortBy === 'downloads'){
+            return b.downloads - a.downloads
+        }
+
+        if(sortBy === 'rating'){
+            return b.ratingAvg - a.ratingAvg
+        }
+
+        return 0
+    })
+
     return (
         <div className='flex flex-col justify-between items-center gap-5 w-full'>
             <div className='flex flex-row justify-between items-center w-full'>
                 <h2 className='text-2xl font-semibold'>{installed.length} Apps Found</h2>
-                <select defaultValue="Pick a color" className="select">
-                    <option disabled={true}>Sort By Downloads</option>
-                    <option>Ascending</option>
-                    <option>Descending</option>
+                <select 
+                className="select"
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                >
+                    <option value={'size'}>Size</option>
+                    <option value={'downloads'}>Downloads</option>
+                    <option value={'rating'}>Rating</option>
                 </select>
             </div>
             <div className='flex flex-col justify-between items-start gap-5 w-full'>
@@ -42,7 +63,7 @@ const AppLists = () => {
                         </Link>
                     </div>
                 ) : (
-                    installed.map((install) => <EachApp key={install.id} install={install} />)
+                    sortedInstalled.map((install) => <EachApp key={install.id} install={install} />)
                 )
                 }
             </div>
