@@ -61,12 +61,14 @@ List required dependencies or major libraries:
 
 ```json
 {
-  "next": "^16.3.6",
-  "react": "^19.0.0",
-  "react-dom": "^19.0.0",
-  "lucide-react": "^0.475.0",
-  "recharts": "^2.15.1",
-  "react-toastify": "^11.0.3"
+  "daisyui": "^5.7.46",
+  "lucide": "^1.48.0",
+  "lucide-react": "^1.48.0",
+  "next": "16.3.6",
+  "react": "19.2.8",
+  "react-dom": "19.2.8",
+  "react-toastify": "^11.1.0",
+  "recharts": "^3.10.1"
 }
 ```
 
