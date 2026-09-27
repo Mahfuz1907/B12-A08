@@ -39,8 +39,8 @@ This project has been done with a fake api, and the api link is: [API](https://r
 
 - **Trending Apps Showcase** — Clean homepage grid highlighting top trending applications with download counts and rating badges.
 - **Search & Filtering System** — Instant real-time app discovery and search across all catalog listings.
-- **Dynamic App Details Page** — Detailed application information including interactive rating bar charts powered by Recharts[cite: 7].
-- **Local Application Management** — Dynamic "Install / Uninstall" toggles managed via global state with instant notification toasts[cite: 9].
+- **Dynamic App Details Page** — Detailed application information including interactive rating bar charts powered by Recharts.
+- **Local Application Management** — Dynamic "Install / Uninstall" toggles managed via global state with instant notification toasts.
 - **Comprehensive Error & Empty States** — Custom visual fallback states for empty installed app lists and missing 404 pages (`not-found.tsx`).
 
 ---
@@ -48,7 +48,7 @@ This project has been done with a fake api, and the api link is: [API](https://r
 ## Tech Stack
 
 **Framework & Core:** Next.js (App Router) · React · TypeScript  
-**Styling & Design:** Tailwind CSS · Inter Font  
+**Styling & Design:** Tailwind CSS · Inter Font · Daisy UI
 **Data Visualization:** Recharts  
 **Icons & Toasts:** Lucide React · React Toastify  
 **Tools:** Git · VS Code · npm
