@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import InstallButton from './InstallButton';
 import AppReviewChart from './AppReviewChart';
+import { notFound } from 'next/navigation';
 
 export interface AppDetailsTypes{
     params: Promise<{
@@ -12,9 +13,14 @@ export interface AppDetailsTypes{
 
 
 const getData = async() => {
+  try{
     const response = await fetch('https://raw.githubusercontent.com/Mahfuz1907/b12-a08-api/master/db.json')
-    const data = response.json()
+    if(!response) return null
+    const data = await response.json()
     return data
+  }catch{
+    return null
+  }
 }
 
 
@@ -51,7 +57,11 @@ const AppDetails = async({params}: AppDetailsTypes) => {
     const appData = await getData()
     const app = appData.apps[Number(id) - 1]
 
-    console.log(app)
+    if(!app){
+      notFound()
+    }
+
+
     return (
         <div className="m-20 px-6 py-12 text-[#1E293B]">
       <div className="flex flex-col sm:flex-row items-start gap-8 pb-8 border-b border-gray-200">
